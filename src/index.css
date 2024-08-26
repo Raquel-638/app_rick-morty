@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --primary-color: #05292e;
+    --secondary-color: #062226;
+    --font-base: 'Roboto', sans-serif;
+    --font-alternative: 'Shadows Into Light', cursive;
+  }
+
+html {
+    font-family: var(--font-base);
+    box-sizing: border-box;
+    background-image: url(/img/fondo.avif);
+    scrollbar-width: thin;
+    scrollbar-color: #04a904 #000;
+
+    *,*::before, *::after{
+        box-sizing: inherit;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    h1, h2, h3, p, ul, hr{
+        margin: 0;
+    }
+
+    img{
+        width: 100%;
+        display: block;
+    }
+
+    input, button{
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
+    }
+    
+    input{
+        outline: none;
+    }
+}
+
+.loader {
+    display: inline-flex;
+    gap: 10px;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    height: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+      linear-gradient(#222 0 0) top/100% 0% no-repeat,
+      radial-gradient(farthest-side,#000 95%,#0000) 50%/8px 8px no-repeat
+      #fff;
+    animation: l9 4s infinite ease-in;
+  }
+  @keyframes l9 {
+    0%  {background-size:100% 0%,8px 8px;background-position:top, 50% 50%}
+    80% {background-size:100% 70%,8px 8px;background-position:top, 50% 70%}
+    84%,
+    100%{background-size:100% 0%,8px 8px;background-position:top, 50% 50%}
+  }
+
+/* Reusable Classes  */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.grid-container {
+    display: grid;
+}

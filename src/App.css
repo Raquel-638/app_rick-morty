@@ -1,0 +1,48 @@
+.app {
+    flex-direction: column;
+    gap: 2em;
+
+    .app__body {
+        padding: 1em 3em;
+    }
+}
+
+.app__hero{
+    margin-top: auto;
+
+    .hero__image {
+        max-width: 100%;
+        object-fit: cover;
+        aspect-ratio: 100%;
+    }
+
+}
+
+.form {
+    margin-bottom: 1.5em;
+    text-align: center;
+
+    .form__input {
+        padding: 0.5em 0.2em;
+        border-radius: 0.5em 0 0 0.5em;
+        width: 10em;
+    }
+
+    .form__btn {
+        padding: 0.5em 0.8em;
+        background-color: #04a904;
+        color: #fff;
+        border-radius: 0 0.5em 0.5em 0;
+        transition: background-color .5s ease;
+        &:hover {
+            background-color: #046104e1;
+            cursor: pointer;
+        }
+    }
+}
+
+.cards__container {
+    gap: 2em;
+    padding-bottom: 3em;
+    flex-wrap: wrap;
+}
